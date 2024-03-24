@@ -1,6 +1,8 @@
 nav{
   display: flex;
   justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #E2E8F0;
 }
 
 .search{
@@ -16,8 +18,35 @@ nav{
 }
 
 .login:hover,.cart:hover,.seller:hover,.option:hover{
+  display: flex;
+  justify-content: center;
   cursor: pointer;
   background-color: #2B54E4;
   border-radius: 12px;
   color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+
+/*For Mobile Phones*/
+
+@media (max-width: 768px){
+  .hamburger{
+    display: block;
+    padding-top: 10px;
+    margin-left: 10px;
+    z-index: 10;
+  }
+  .login,.cart,.seller,.option,.search{
+    display: none;
+  }
+  .login-mob,.cart-mob,.seller-mob,.option-mob,.search-mob{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
 }
