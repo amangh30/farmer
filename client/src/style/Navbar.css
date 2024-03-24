@@ -1,0 +1,84 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #82f09e;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 2px 4px rgb(144, 244, 217)
+  }
+  
+  .logo img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    background-color: #02005e; 
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .search-bar button:hover {
+    background-color: #00d0ff; 
+  }
+  
+  .options {
+    display: flex;
+    align-items: center;
+  }
+  
+  .options > div {
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease; /* Add transition for smooth effect */
+  }
+  
+  .options > div:hover {
+    color: #fb641b; 
+  }
+  
+  .options > div:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fb641b;
+    bottom: -5px;
+    left: 0;
+    animation: stretch 0.3s ease forwards;
+  }
+  
+  @keyframes stretch {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+  
+  .options > div img {
+    height: 20px;
+    width: auto;
+  }
+  
+  .options > div span {
+    margin-left: 5px;
+  }
+  
