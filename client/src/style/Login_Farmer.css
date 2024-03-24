@@ -1,0 +1,134 @@
+body{
+  background: url('../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 95vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper{
+  width: 420px;    
+  color: rgb(0, 220, 136);
+  border: 3px solid rgb(255, 255, 255);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.wrapper h1{
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box{
+  position: relative;
+  width: 85%;
+  height: 30px;
+  margin: 50px 0;
+}
+
+.input-box input{
+  width: 95%;
+  height: 90%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgb(255, 119, 221);
+  border-radius: 40px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  padding: 15px 40px 20px 20px;
+}
+
+.input-box input::placeholder{
+  color: rgb(0, 21, 255);
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 3px;
+  top: 100%;
+  color: blue;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.wrapper button{
+  width: 100%;
+  height: 45px;
+  font-weight: bold;
+  background: rgb(255, 164, 36);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgb(215, 156, 255);
+  cursor: pointer;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+.wrapper button:hover{
+  
+  background-color: #ff7300;
+  transition: 0.4s;
+
+}
+
+.wrapper .register-link{
+  font-size: 15px;
+  text-align: center;
+  margin:20px 0 15px;
+}
+
+.register-link p a{
+  color:aquamarine;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+
+
+.register-link p a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+.dropdown {
+    margin-top: 20px;
+    width: 55vw;
+    appearance: none;
+    background: transparent;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 40px;
+    padding: 20px 5px;
+    border-color: #ff00bf;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #0015ff;
+    cursor: pointer;
+  }
+  
+  .dropdown:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+
+
+*{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
