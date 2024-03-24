@@ -1,36 +1,50 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStore } from '@fortawesome/free-solid-svg-icons';
 import '../style/Navbar.css';
-
-
+import IconButton from "@mui/material/IconButton";
+import SearchIcon from "@mui/icons-material/Search";
+import TextField from "@mui/material/TextField";
+import AgricultureOutlinedIcon from '@mui/icons-material/AgricultureOutlined';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import StorefrontOutlinedIcon from '@mui/icons-material/StorefrontOutlined';
+import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav>
       <div className="logo">
-        <img src="../assets/logo.PNG" alt="Logo" />
+        Icon
       </div>
-      <div className="search-bar">
-        <input type="text" placeholder="Search for products" />
-        <button> <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /> </button>
+      <div className="search">
+        <TextField
+          id="search-bar"
+          className="text"
+          onInput={(e) => {
+            setSearchQuery(e.target.value);
+          }}
+          style={{width:'40vw'}}
+          label="Search"
+          variant="outlined"
+          placeholder="Search..."
+          size="small"
+        />
+        <IconButton type="submit" aria-label="search">
+          <SearchIcon style={{ fill: "blue" }} />
+        </IconButton>
       </div>
-      <div className="options">
-        <div className="login">
-        <FontAwesomeIcon icon="fa-solid fa-user" />
-          <span>Login</span>
-        </div>
-        <div className="cart">
-        <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
-          <span>Cart</span>
-        </div>
-        <div className="become-seller">
-        <FontAwesomeIcon icon={faStore} />
-          <span>Become a Seller</span>
-        </div>
-        <div className="more-options">
-        <button><FontAwesomeIcon icon="fa-solid fa-ellipsis-vertical" /></button>
-        </div>
+      <div className="login">
+        <AgricultureOutlinedIcon style={{fontSize:'25px'}}/>
+          Login as Farmer
+      </div>
+      <div className="cart"> 
+      <ShoppingCartOutlinedIcon style={{fontSize:'25px'}} />
+          Cart
+      </div>
+      <div className="seller">
+      <StorefrontOutlinedIcon style={{fontSize:'25px'}} />
+          Become A Seller
+      </div>
+      <div className="option">
+      <AccountBoxOutlinedIcon style={{fontSize:'25px'}}/>
+          Profile
       </div>
     </nav>
   );
