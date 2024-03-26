@@ -7,6 +7,8 @@ import '../style/SignUp_Customer.css';
 const SignUp_Customer = () =>{
 
     return (
+       
+       <div className="bg2"> 
 
     <div className= 'wrapper'>
     <form action = "">
@@ -29,11 +31,14 @@ const SignUp_Customer = () =>{
     </div>
 
     <button type="submit">Sign-Up</button>
-
+    
+    <div className="register-link">
+    <p>ALREADY HAVE AN ACCOUNT? <a href="#">LogIn</a></p>
+    </div>
     
     </form>
     </div>
-
+    </div>
     );
 };
 

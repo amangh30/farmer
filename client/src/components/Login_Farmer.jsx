@@ -11,7 +11,9 @@ const Login_Farmer = () =>{
 
 
     return (
-
+    
+    <div className="bg1">
+        
     <div className= 'wrapper'>
     <form action = "">
     <h1>Log-In as Farmer</h1>
@@ -37,6 +39,7 @@ const Login_Farmer = () =>{
     </div>
 
     </form>
+    </div>
     </div>
 
     );

@@ -1,14 +1,17 @@
-body{
-    background: url('../assets/background1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 95vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+
+ .bg3{
+
+  background: url('../assets/background1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 95vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
   }
-  
+
+
   .wrapper{
     width: 420px;    
     color: rgb(0, 220, 136);
@@ -44,14 +47,14 @@ body{
   }
   
   .input-box input::placeholder{
-    color: rgb(0, 21, 255);
+    color: rgb(255, 255, 255);
   }
   
   .input-box .icon {
     position: absolute;
     right: 3px;
     top: 100%;
-    color: blue;
+    color: rgb(255, 255, 255);
     transform: translateY(-50%);
     font-size: 20px;
   }
@@ -97,7 +100,7 @@ body{
       border-radius: 40px;
       padding: 15px 40px 20px 20px;
       margin-bottom: 15px;
-      border-color: #ff00bf;
+      border-color: rgb(255, 119, 221);
       margin-right: 0px;
       font-size: 20px;
       color: #0015ff;
@@ -117,3 +120,45 @@ body{
   }
   
   
+
+
+
+
+
+
+
+  @media only screen and (max-width: 1050px) {
+   
+
+    .wrapper {
+        width: 80%; 
+    }
+}
+
+.wrapper .register-link{
+  font-size: 15px;
+  text-align: center;
+  margin:20px 0 15px;
+}
+
+.register-link p a{
+  color:aquamarine;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+
+
+.register-link p a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+@media only screen and (max-width: 300px) {
+ 
+  .wrapper {
+      width: 30%; 
+  }
+}

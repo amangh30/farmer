@@ -8,6 +8,7 @@ const Login_Customer = () =>{
 
     return (
 
+        <div className="bg">    
     <div className= 'wrapper'>
     <form action = "">
     <h1>Log-In as Consumer</h1>
@@ -32,7 +33,7 @@ const Login_Customer = () =>{
 
     </form>
     </div>
-
+    </div>
     );
 };
 

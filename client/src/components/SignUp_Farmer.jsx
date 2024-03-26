@@ -24,6 +24,8 @@ const SignUp_Farmer = () =>{
 
     return (
 
+      <div className="bg3">
+
     <div className= 'wrapper'>
     <form action = "">
     <h1>Sign-Up as Farmer</h1>
@@ -92,10 +94,14 @@ const SignUp_Farmer = () =>{
 
     <button type="submit">Sign-Up</button>
 
+    <div className="register-link">
+    <p>ALREADY HAVE AN ACCOUNT? <a href="#">LogIn</a></p>
+    </div>
+
     
     </form>
     </div>
-
+    </div>
     );
 };
 

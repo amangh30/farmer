@@ -1,4 +1,4 @@
-body{
+.bg{
     background: url('../assets/background.jpg');
     background-size: cover;
     background-position: center;
@@ -99,8 +99,22 @@ body{
 
 
 
+@media only screen and (max-width: 1050px) {
+    
+
+    .wrapper {
+        width: 80%; 
+    }
+}
 
 
-
-
+@media only screen and (max-width: 300px) {
+    .bg {
+        display: none; 
+    }
+  
+    .wrapper {
+        width: 30%; 
+    }
+  }
 

@@ -8,7 +8,7 @@ import SignUp_Customer from './components/SignUp_Customer';
 function App() {
   return (
     <div className="App">
-      <SignUp_Customer/>
+      <SignUp_Farmer/>
     </div>
   );
 }

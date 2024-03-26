@@ -1,4 +1,4 @@
-body{
+.bg2{
     background: url('../assets/background1.jpg');
     background-size: cover;
     background-position: center;
@@ -78,7 +78,39 @@ body{
 
 }
 
+.wrapper .register-link{
+    font-size: 15px;
+    text-align: center;
+    margin:20px 0 15px;
+}
 
+.register-link p a{
+    color:aquamarine;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1050px) {
+    
+
+    .wrapper {
+        width: 80%; 
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    
+  
+    .wrapper {
+        width: 30%; 
+    }
+  }
 
 
 
