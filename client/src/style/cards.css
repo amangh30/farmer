@@ -1,0 +1,150 @@
+
+.card-container {
+    column-count: 3;
+    min-width: 100%;
+    margin: 5px -5px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5vh;
+    max-height: 80vh;
+    padding-left: 4vw;
+    max-width: 10%;
+    row-gap: 50px;
+    
+   
+   
+
+}
+.coc{
+    max-width: 89vw;
+}
+
+.card_box {
+    height: 49vh;
+    width: 19.7vw;
+    font-size: 14px;
+    border: 0.2rem ;
+    border-radius: 1.5rem;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.photu {
+    padding-left: 3.5px;
+    margin: 4px 0;
+    padding-top: 5px;
+    width: 275px;
+    height: 183px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 25px;
+    margin: 5px 0;
+
+}
+
+p {
+
+    margin: 5px 0;
+
+}
+
+.card_box p {
+
+    font-size: 12px;
+
+
+
+}
+
+.details {
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+}   
+
+.btn {
+  
+    margin: 25px;
+    padding: 6px;
+    width: 8.6vw;
+    border: none;
+    border-radius: 22px;
+    background-color: #2B54E4;
+    color: rgb(236, 229, 229);
+}
+
+.soldby{
+    color: #2B54E4;
+}
+
+.bg404{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44.8vh;
+    padding-top: 15.6px;
+    padding-bottom: 38.6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    border: 0.2rem ;
+    border-radius: 1.5rem;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.bg404:hover{
+    border-radius: 1.2rem;
+    border: 0.16rem solid rgb(232, 232, 232);
+
+}
+
+@media (max-width: 768px){
+    .bg404:hover{
+        border-radius: 1.2rem;
+        border: 0.16rem solid rgb(232, 232, 232);
+        width: fit-content;
+        height: fit-content;
+    
+    }
+    
+    
+    .card-container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        margin-left: 12vw ;
+     }
+    
+    .bg404{
+        width: 250px;
+        height: 350px;
+        padding-bottom: 15.6rem;
+    }
+    .card_box{
+        height: 60px;
+        width: 224px;
+    }
+    .btn{
+        width: 198px;
+    }
+    .coc{
+        justify-content: center;
+        align-items: center;
+        max-width:  798vw;
+    }
+    
+}
+
+@media (min-width: 1989px){
+    .coc{
+        max-width: 80vw;
+    }
+}

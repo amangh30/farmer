@@ -3,13 +3,16 @@ nav{
   justify-content: space-between;
   padding-bottom: 12px;
   border-bottom: 1px solid #E2E8F0;
+  padding: 7px;
 }
 
 .search{
   width: 45vw;
+  position: relative;
+
 }
 
-.login,.cart,.seller,.option,.logo{
+.login,.cart2,.seller,.option,.logo{
   display: flex;
   justify-content: center;
   padding: 0 10px 0 10px;
@@ -17,7 +20,40 @@ nav{
   gap: 7px;
 }
 
-.login:hover,.cart:hover,.seller:hover,.option:hover{
+.suggestion-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  max-height: 150px; /* Set maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ccc;
+  border-top: none; /* Remove border on top to avoid double border */
+  padding: 2px;
+  margin: 0;
+  width: 40vw;
+  border-radius: 12px;
+  background-color: #fff;
+  list-style: none;
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
+
+.suju:hover{
+background-color: #f8f5f5;
+border-radius: 12px;
+padding: 5px;
+}
+
+a{
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.login:hover,.cart2:hover,.seller:hover,.option:hover{
   display: flex;
   justify-content: center;
   cursor: pointer;
@@ -41,10 +77,10 @@ nav{
     margin-left: 10px;
     z-index: 10;
   }
-  .login,.cart,.seller,.option,.search{
+  .login,.cart2,.seller,.option,.search{
     display: none;
   }
-  .login-mob,.cart-mob,.seller-mob,.option-mob,.search-mob{
+  .login-mob,.cart2-mob,.seller-mob,.option-mob,.search-mob{
     display: flex;
     align-items: center;
     gap: 4px;

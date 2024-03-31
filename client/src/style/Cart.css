@@ -1,0 +1,159 @@
+.bjob {
+    background: #e5e7eb;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+
+.container {
+
+
+    margin-left: 117px;
+}
+
+.container h2 {
+    padding-left: 4vw;
+    padding-top: 2.5vh;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.cart1 {
+    border-radius: 25px;
+    margin: 24px 16px;
+    background-color: #e5e7eb;
+    padding: 22px;
+    font-size:large;
+    font-weight: 300;
+}
+
+.total-price {
+    padding-bottom: 15px;
+}
+
+.cart-item {
+
+    color: black;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 29px;
+    margin-bottom: 20px;
+}
+
+ .amt_box {
+    display: flex;
+    justify-content: space-between;
+
+
+} 
+
+.center-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cart-item img {
+    width: 115px;
+}
+
+.cart-item p {
+    padding: 0 45px;
+}
+
+.cart-item .remove-item {
+    width: 25px !important;
+}
+
+.btn-default {
+    background-color: #fff;
+}
+
+.cart-item .form-control {
+    background-color: #F1F3F6;
+    border: none;
+    width: 65px;
+    border-radius: 10px !important;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.input-group {
+    width: unset;
+    flex-wrap: nowrap;
+}
+
+.status {
+    text-align: right;
+
+}
+
+.check-out {
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 19px;
+    font-weight: 600;
+    width: 180px;
+
+    background-color: #2B54E4;
+    color: white;
+    border: none;
+}
+
+.check-out-box {
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+@media only screen and (min-width: 607px) {
+    
+    .icons {
+        display: flex;
+        justify-content: end;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .amt_box {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 29px;
+        padding-top: 27px;
+        padding-bottom: 20px;
+        height: 16vh;
+    }
+    .container {
+
+
+        margin-left: 5px;
+    }
+
+}
+@media only screen and (max-width: 607px) {
+    .container {
+
+
+        margin-left: 5px;
+    }
+}
+.fullCart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart_item_cont{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart:hover{
+    background-color: #e5e7eb ;
+}

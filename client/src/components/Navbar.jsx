@@ -9,10 +9,12 @@ import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import { useEffect, useState } from 'react';
 import { Drawer } from '@mui/material';
+import icon from "../assets/icon.png"       
 
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [hamburgerOpen,setHamburgerOpen] = useState(false);
-
+  
   const [open,setOpen] = useState(false)
   const handleNav =()=>{
     setHamburgerOpen(true)
@@ -46,7 +48,7 @@ const Navbar = () => {
       {isMobile?(
         <nav className={hamburgerOpen?"nav-mob":"nav"}>
         <div className="logo">
-        Icon
+        <img style={{width:'40px'}} src={icon} alt="" />
       </div>
         <Drawer  onClose={handleClose} open={open} sx={{
         width: 240,
@@ -56,15 +58,11 @@ const Navbar = () => {
           padding:'7px'
       }}}>
      <div className="logo">
-        Icon
       </div>
       <div className={hamburgerOpen?"search-mob":"search"}>
         <TextField
           id="search-bar"
           className="text"
-          onInput={(e) => {
-            setSearchQuery(e.target.value);
-          }}
           style={{width:'40vw'}}
           label="Search"
           variant="outlined"
@@ -77,15 +75,15 @@ const Navbar = () => {
       </div>
       <div className={hamburgerOpen?"login-mob":"login"}>
         <AgricultureOutlinedIcon style={{fontSize:'25px'}}/>
-          Login as Farmer
+        <Link to='/loginf'>Login as Farmer</Link>        
       </div>
-      <div className={hamburgerOpen?"cart-mob":"cart"}> 
+      <div className={hamburgerOpen?"cart2-mob":"cart2"}> 
       <ShoppingCartOutlinedIcon style={{fontSize:'25px'}} />
           Cart
       </div>
       <div className={hamburgerOpen?"seller-mob":"seller"}>
       <StorefrontOutlinedIcon style={{fontSize:'25px'}} />
-          Become A Seller
+      <Link to='/login'>Login</Link>
       </div>
       <div className={hamburgerOpen?"option-mob":"option"}>
       <AccountBoxOutlinedIcon style={{fontSize:'25px'}}/>
@@ -98,15 +96,12 @@ const Navbar = () => {
     </nav>):(
       <nav className={hamburgerOpen?"nav-mob":"nav"}>
       <div className="logo">
-        Icon
+      <img style={{width:'40px'}} src={icon} alt="" />
       </div>
     <div className={hamburgerOpen?"search-mob":"search"}>
       <TextField
         id="search-bar"
         className="text"
-        onInput={(e) => {
-          setSearchQuery(e.target.value);
-        }}
         style={{width:'40vw'}}
         label="Search"
         variant="outlined"
@@ -119,15 +114,15 @@ const Navbar = () => {
     </div>
     <div className={hamburgerOpen?"login-mob":"login"}>
       <AgricultureOutlinedIcon style={{fontSize:'25px'}}/>
-        Login as Farmer
+        <Link to='/loginf'>Login as Farmer</Link>        
     </div>
-    <div className={hamburgerOpen?"cart-mob":"cart"}> 
+    <div className={hamburgerOpen?"cart2-mob":"cart2"}> 
     <ShoppingCartOutlinedIcon style={{fontSize:'25px'}} />
         Cart
     </div>
     <div className={hamburgerOpen?"seller-mob":"seller"}>
     <StorefrontOutlinedIcon style={{fontSize:'25px'}} />
-        Become A Seller
+        <Link to='/login'>Login</Link>
     </div>
     <div className={hamburgerOpen?"option-mob":"option"}>
     <AccountBoxOutlinedIcon style={{fontSize:'25px'}}/>

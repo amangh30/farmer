@@ -1,0 +1,97 @@
+.opp{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.fcb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 75vh; /* Adjust the value as needed */
+    justify-content: space-evenly;
+  }
+  
+  @media (min-width: 992px) {
+    .fcb {
+      min-height: 100vh; /* Adjust the value as needed */
+    }
+  }
+  
+  .ucl {
+    flex: 0 0 58.33333%; /* col-md-7 */
+    max-width: 58.33333%;
+  }
+  
+  @media (min-width: 992px) {
+    .ucl {
+      flex: 0 0 50%; /* col-lg-6 */
+      max-width: 50%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .ucl {
+      flex: 0 0 41.66667%; /* col-xxl-5 */
+      max-width: 41.66667%;
+    }
+  }
+  
+  .py-6 {
+    padding-top: 4.5rem; /* py-6 */
+    padding-bottom: 4.5rem; /* py-6 */
+  }
+  
+  .text-sm-start {
+    text-align: left; /* text-sm-start */
+  }
+  
+  .text-center {
+    text-align: center; /* text-center */
+  }
+
+  .fifa {
+    width: max-content;
+    margin-top: 1.5rem; /* mt-6 */
+  }
+  
+  @media (min-width: 576px) {
+    .fifa {
+      margin-bottom: 1rem; /* mb-sm-4 */
+    }
+  }
+  
+  .fifa {
+    font-weight: 750; 
+    line-height: 1.25; 
+    color: rgb(11, 11, 85);
+  }
+  
+  @media (min-width: 992px) {
+    .fifa {
+      font-size: 1.25rem; /* fs-lg-5 */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .fifa {
+      font-size: 43px ;
+    }
+  }
+
+  .twt {
+    margin-bottom: 1rem; /* mb-4 */
+    font-size: 1rem; /* fs-1 */
+  }
+  
+  
+  .baigan {
+    display: none; /* Hidden by default */
+  }
+  
+  @media (min-width: 768px) {
+    .baigan {
+      display: block; /* Displayed for medium and larger screens */
+    }
+  }
+  
+  

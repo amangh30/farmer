@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 95vh;
+  height: 100vh;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +14,7 @@
 
   .wrapper{
     width: 420px;    
-    color: rgb(0, 220, 136);
+    color: white;
     border: 3px solid rgb(255, 255, 255);
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
@@ -104,6 +104,7 @@
       margin-right: 0px;
       font-size: 20px;
       color: #0015ff;
+      background-color: white;
       cursor: pointer;
     }
     
